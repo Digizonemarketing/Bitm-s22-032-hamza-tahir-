@@ -11,7 +11,7 @@ var OR_marks = prompt('Enter Opration Research Marks ');
 var OR_grade_points, OR_grade;
 
 var OOP_marks = prompt('Enter OOP_marks Marks ');
-var OOP_marks_grade_points, OOP_marks_grade;
+var OOP_grade_points, OOP_grade;
 
 
 if (DB_marks > 85) {
@@ -197,52 +197,52 @@ else {
 
 
 if (OOP_marks > 85) {
-      OOP_marks_grade_points = 4.0;
-      OOP_marks_grade = "grade A";
+      OOP_grade_points = 4.0;
+      OOP_grade = "grade A";
 }
 if (OOP_marks > 80 && OOP_marks < 84) {
-      OOP_marks_grade_points = 3.66;
-      OOP_marks_grade = "grade A-";
+      OOP_grade_points = 3.66;
+      OOP_grade = "grade A-";
 }
 else if (OOP_marks > 75 && OOP_marks < 79) {
-      OOP_marks_grade_points = 3.33;
-      OOP_marks_grade = "grade B";
+      OOP_grade_points = 3.33;
+      OOP_grade = "grade B";
 }
 else if (OOP_marks > 71 && OOP_marks < 74) {
-      OOP_marks_grade_points = 3.0;
-      OOP_marks_grade = "grade B-";
+      OOP_grade_points = 3.0;
+      OOP_grade = "grade B-";
 }
 else if (OOP_marks > 68 && OOP_marks < 70) {
-      OOP_marks_grade_points = 2.66;
-      OOP_marks_grade = "C+";
+      OOP_grade_points = 2.66;
+      OOP_grade = "C+";
 }
 
 else if (OOP_marks > 64 && OOP_marks < 67) {
-      OOP_marks_grade_points = 2.33;
-      OOP_marks_grade = "C";
+      OOP_grade_points = 2.33;
+      OOP_grade = "C";
 }
 else if (OOP_marks > 61 && OOP_marks < 63) {
-      OOP_marks_grade_points = 2.0;
-      OOP_marks_grade = "C-";
+      OOP_grade_points = 2.0;
+      OOP_grade = "C-";
 }
 else if (OOP_marks > 58 && OOP_marks < 60) {
-      OOP_marks_grade_points = 1.66;
-      OOP_marks_grade = "D";
+      OOP_grade_points = 1.66;
+      OOP_grade = "D";
 }
 else if (OOP_marks > 50 && OOP_marks < 57) {
-      OOP_marks_grade_points = 1.30;
-      OOP_marks_grade = "D-";
+      OOP_grade_points = 1.30;
+      OOP_grade = "D-";
 }
 else {
-      OOP_marks_grade_points = 0.0;
-      OOP_marks_grade = "F";
+      OOP_grade_points = 0.0;
+      OOP_grade = "F";
 }
 
-var total_Grade = (DB_grade_points + OS_grade_points + WEB_app_grade_points + OR_grade_points + OOP_marks_grade_points) / 5;
+var total_Grade = (DB_grade_points + OS_grade_points + WEB_app_grade_points + OR_grade_points + OOP_grade_points) / 5;
 
 document.write("Database Grade is " + DB_grade + " Database Points = " + DB_grade_points + "<br>");
 document.write("Operating System Grade is " + OS_grade + " Operating System Points = " + OS_grade_points + "<br>");
 document.write("Web Application Grade is " + WEB_grade + " Web Application Points = " + WEB_app_grade_points + "<br>");
 document.write("Operation Research Grade is " + OR_grade + " Operation Research Points = " + OR_grade_points + "<br>");
-document.write("OOP Grade is " + OOP_marks_grade + " OOP Points = " + OOP_marks_grade_points + "<br>");
+document.write("OOP Grade is " + OOP_grade + " OOP Points = " + OOP_grade_points + "<br>");
 document.write("GPA IS " + total_Grade + "<br>");
