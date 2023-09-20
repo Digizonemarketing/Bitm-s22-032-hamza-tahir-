@@ -240,7 +240,6 @@ else {
 
 var total_Grade = (DB_marks_grade_points + OS_marks_grade_points + WEB_marks_app_grade_points + OR_marks_grade_points + OOP_marks_grade_points) / 5;
 
-// Correct the output statements and typos
 document.write("Database Grade is " + DB_marks_grade + " Database Points = " + DB_marks_grade_points + "<br>");
 document.write("Operating System Grade is " + OS_marks_grade + " Operating System Points = " + OS_marks_grade_points + "<br>");
 document.write("Web Application Grade is " + WEB_marks_grade + " Web Application Points = " + WEB_marks_app_grade_points + "<br>");
